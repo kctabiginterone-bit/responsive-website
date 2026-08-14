@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>One-Page Responsive Site</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="One-page responsive website using HTML, Sass, and JavaScript">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">ResponWeb</div>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Responsive One-Page Website</h1>
+        <p class="lead">Built with HTML, Sass (SCSS) and JavaScript — adjusts for mobile, tablet, and desktop.</p>
+        <div class="hero-actions">
+          <button id="learn-btn" class="btn">Learn More</button>
+          <button id="change-btn" class="btn alt">Change Text</button>
+        </div>
+        <p id="extra" class="extra" hidden>Extra content shown when you press "Learn More". This demonstrates show/hide interactivity.</p>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Features</h2>
+      <ul>
+        <li>SCSS variables, nesting, and mixins used</li>
+        <li>Mobile navigation menu toggle</li>
+        <li>Show/hide content and change text interactions</li>
+      </ul>
+    </section>
+
+    <section id="cards" class="cards container">
+      <h2>Content Cards</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Card One</h3>
+          <p>Short description for card one.</p>
+          <button class="card-toggle btn small">More</button>
+          <div class="card-extra" hidden>This is more content inside card one.</div>
+        </article>
+
+        <article class="card">
+          <h3>Card Two</h3>
+          <p>Short description for card two.</p>
+          <button class="card-toggle btn small">More</button>
+          <div class="card-extra" hidden>This is more content inside card two.</div>
+        </article>
+
+        <article class="card">
+          <h3>Card Three</h3>
+          <p>Short description for card three.</p>
+          <button class="card-toggle btn small">More</button>
+          <div class="card-extra" hidden>This is more content inside card three.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Example contact area — this page is a demonstration of layout and interactivity.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> ResponWeb</p>
+      <p class="small">Built with HTML, SCSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

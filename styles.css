@@ -1,0 +1,32 @@
+/* Compiled CSS from SCSS (kept readable) */
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#222;background:#f8f9fa;margin:0;line-height:1.4}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ec}
+.site-header .header-inner{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:.75rem 0}
+.site-header .logo{font-weight:700;color:#0d6efd}
+.site-header .nav-toggle{display:none;background:none;border:none;font-size:1.5rem}
+.site-header .main-nav ul{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:1rem;list-style:none;margin:0;padding:0}
+.site-header .main-nav a{text-decoration:none;color:#222;padding:.25rem .5rem}
+.hero{padding:3rem 0;background:linear-gradient(180deg,rgba(13,110,253,.06),transparent 60%)}
+.hero .hero-inner{text-align:center}
+.hero h1{margin:0 0 .5rem;font-size:2rem}
+.hero .lead{margin:0 0 1rem;color:#1f1f1f}
+.hero .hero-actions{display:flex;flex-direction:row;justify-content:center;align-items:center;gap:.5rem;flex-wrap:wrap}
+.hero .extra{margin-top:1rem}
+.features{padding:2rem 0}
+.cards{padding:2rem 0}
+.cards .card-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.cards .card{background:#fff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.cards .card h3{margin-top:0}
+.cards .card .card-extra{margin-top:.75rem;color:#1a1a1a}
+.contact{padding:2rem 0}
+.site-footer{background:#fff;border-top:1px solid #e6e9ec;padding:1rem 0}
+.site-footer .footer-inner{display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+.site-footer .small{color:#1a1a1a;font-size:.9rem}
+.btn{background:#0d6efd;color:#fff;border:none;padding:.5rem .9rem;border-radius:6px;cursor:pointer}
+.btn.alt{background:#6f42c1}
+.btn.small{padding:.35rem .6rem;font-size:.9rem}
+@media (max-width:600px){.site-header .main-nav{display:none}.site-header .nav-toggle{display:block}.cards .card-grid{grid-template-columns:1fr}.site-footer .footer-inner{flex-direction:column;gap:.5rem}}
+@media (min-width:601px) and (max-width:900px){.cards .card-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:901px){.cards .card-grid{grid-template-columns:repeat(3,1fr)}}
